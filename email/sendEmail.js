@@ -5,6 +5,7 @@ const sendEmail = (email, subject, text) => {
     const transporter = nodemailer.createTransport({
       host: process.env.HOST,
       service: process.env.SERVICE,
+      port: process.env.PORT,
       auth: {
         user: process.env.USER,
         pass: process.env.PASS,
